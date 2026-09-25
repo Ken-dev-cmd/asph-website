@@ -1111,10 +1111,10 @@ const ridersData = [
 ];
 
 const highlightsData = [
-  { id:0, name:"Kape Serye 2.0", date:"September 20, 2026", location:"San Pedro Kape Serye", riders:70, photos:40, story:"", image:"", stats:{ riders:280, bikes:265, photos:450, hours:8 }},
-  { id:1, name:"Wasi", date:"September", location:"Bina City", riders:60, photos:320, story:"", image:"", stats:{ riders:120, bikes:118, photos:320, hours:6 }},
-  { id:2, name:"Simpli Grounds", date:"September 6, 2026", location:"San Francisco ST Pacita 1, San Pedro , Laguna", riders:70, photos:50, story:"", image:"", stats:{ riders:200, bikes:195, photos:500, hours:10 }},
-  { id:3, name:"Social Cafe", date:"August 31, 2026", location:"Social Cade", riders:70, photos:10, story:"", image:"", stats:{ riders:95, bikes:95, photos:180, hours:5 }}
+  { id:0, name:"Kape Serye 2.0", date:"September 20, 2026", location:"San Pedro Kape Serye", riders:70, photos:40, story:"AllStylePh. Kape Serye 2.0 EB Nights Hindi kami nageexpect sa bawat set, pero tignan mo naman yan? Salamat palagi sa taas sa pag gabay sa grupo on and off the road para sa safety ng mga myembro, sa lahat ng official at aspirants nating nagbibigay ng oras, mga kaibigan at kakilalang nakasuporta. Hindi man namin kayo mapasalamatan lahat pero dama naming alam niyo na yun gaya ng lagi naming pinapakita. relax, masaya at nakafocus sa vision na pinanghahawakan natin. 👁️Gusto naming magpasalamat sa inyo sa walang sawang suporta na palagi niyong binibigay sa grupo, sobrang salamat!", image:"event2.jpg", stats:{ riders:280, bikes:265, photos:450, hours:8 }},
+  { id:1, name:"Wasi", date:"September", location:"Bina City", riders:60, photos:320, story:"AllStylePh. @Wasi Dining and Coffee 🏁☕Alam namin na sa loob ng pitong buwan eh may mga palihim na nakasuporta at nakakakita kung paano namin tinatrabaho tong grupo, alam namin na ang ilan dun ay masaya kahit papaanong makita yung grupo na dumadami ang naniniwala.mula sa mga admins nitong grupo at myembro, gusto naming magpasalamat ng higit pa sa lagi naming sinasabi't ipinapakita sa inyo,Sa lahat ng mga kuya na nakalikod, mga grupong nagbibigay din ng kusang loob na suporta, mga naging kaibigan dahil kay allstyle, sa lahat ng myembrong naglalaan palagi ng oras, mga coffee shops at motorcycle shops owner, at sa lahat ng naging parte at magiging parte pa nitong grupo, MARAMING MARAMING SALAMAT PO. 🙏🏼𝗖𝗼𝗻𝗴𝗿𝗮𝘁𝘀 𝗽𝗮𝗿𝗮 𝘀𝗮 𝗴𝗮𝗯𝗶𝗻𝗴 𝘁𝗼 𝗮𝘁 𝗺𝗴𝗮 𝘀𝘂𝘀𝘂𝗻𝗼𝗱 𝗽𝗮 𝗻𝗮𝘁𝗶𝗻𝗴 𝗽𝗹𝗮𝗻𝗼, 𝗺𝗮𝗵𝗮𝗹 𝗻𝗮𝗺𝗶𝗻 𝗸𝗮𝘆𝗼𝗻𝗴 𝗹𝗮𝗵𝗮𝘁!🏁🤟🏼", image:"event1.jpg", stats:{ riders:120, bikes:118, photos:320, hours:6 }},
+  { id:2, name:"Simpli Grounds", date:"September 6, 2026", location:"San Francisco ST Pacita 1, San Pedro , Laguna", riders:70, photos:50, story:"", image:"event4.jpg", stats:{ riders:200, bikes:195, photos:500, hours:10 }},
+  { id:3, name:"Social Cafe", date:"August 31, 2026", location:"Social Cade", riders:70, photos:10, story:"people don’t buy what you do, they buy why you do it. authentic purpose always. We  want to reach out and express our sincere gratitude for our recent AllStylePh Zone Biñan x AllStylePh Main Zone San Pedro meet.an event of this scale succeeds only because of the work, effort and energy that everyone brings to this club. Thank you all for making this event a massive milestone. Let's carry this amazing momentum forward into our next initiatives.", image:"event3.jpg", stats:{ riders:95, bikes:95, photos:180, hours:5 }}
 ];
 
 const galleryData = [
@@ -1439,7 +1439,7 @@ function openHighlightModal(id) {
   if (!h) return;
   // Generate masonry images for this highlight
   const masonryImgs = [];
-  for (let i = 0; i < 8; i++) masonryImgs.push({ src: `https://picsum.photos/seed/hl${id}img${i}/600/${400+Math.floor(Math.random()*400)}`, caption: `${h.name} moment ${i+1}` });
+  for (let i = 0; i < 8; i++) masonryImgs.push({ src: ``, caption: `${h.name} moment ${i+1}` });
 
   document.getElementById('highlightModalContent').innerHTML = `
     <img class="modal-img" src="${h.image}" alt="${h.name}" onerror="this.style.display='none'">
