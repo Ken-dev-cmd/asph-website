@@ -1076,7 +1076,7 @@ function renderMerch() {
       sizesHtml += '<span class="merch-size-text">' + m.sizes[s] + '</span>';
     }
     var link = m.link || '#';
-    html += '<div class="merch-card reveal"><div class="merch-img">' + badgeHtml + imgContent + '</div><div class="merch-body"><h3 class="merch-name">' + m.name + '</h3><div class="merch-price">&#8369;' + m.price + '</div><div class="merch-sizes"><span class="merch-size-label">Available Size:</span>' + sizesHtml + '</div><div class="card-footer"><button class="btn btn-outline btn-sm" onclick="openExternalLink(\'' + link + '\')">View Link</button></div></div></div>';
+    html += '<div class="merch-card reveal"><div class="merch-img">' + badgeHtml + imgContent + '</div><div class="merch-body"><h3 class="merch-name">' + m.name + '</h3><div class="merch-price">&#8369;' + m.price + '</div><div class="merch-sizes"><span class="merch-size-label">  Size:</span>' + sizesHtml + '</div><div class="card-footer"><button class="btn btn-outline btn-sm" onclick="openExternalLink(\'' + link + '\')">View Link</button></div></div></div>';
   }
   document.getElementById('merchGrid').innerHTML = html;
   setTimeout(initReveals, 50);
